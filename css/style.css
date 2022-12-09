@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+.jumbotron {
+    background: url(/images/friends-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20%;
+    height: 600px;
+}
+
+.skills-section {
+    width: 80%;
+    margin: 2rem auto; 
+}
+
+
+.skill-icons {
+    height: 20px;
+}
+
+.card {
+    width:95%;
+    border: none;
+    box-shadow: 8px 8px 12px 1px rgba(77, 76, 76, 0.5);
+    margin: 1rem;
+}
