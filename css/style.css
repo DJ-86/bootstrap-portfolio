@@ -3,199 +3,80 @@
 Tasks
 
 Style
-
-Fonts *
 Nav *
 Jumbo
-Cards
+
 Background *
-Skills
-Footer
-apply a box shadow to cards on hover
+
 
 Design
 
-Skills section
-Card inner
+refactor
+00000000
 Links
 
 */
- * {
+
+
+    /* default styles and variables  */
+
+:root {
+    --darkGrey: #222;
+    --lightGrey: #777;
+}
+* {
     box-sizing: border-box;
 }
-.row {
-    margin: 1rem;
+
+.my-styles {
+    color: var(--darkGrey);
+    font-family: 'Roboto', sans-serif;
 }
 
+/* navigation */
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--darkGrey);
+    color: #ddd;
+    border: none;
+    z-index: 100;
+}
+
+.nav-items a {
+    color: var(--lightGrey);
+    font-size: 0.8rem;
+}
+
+    /* Jumbotron */
 .jumbotron {
     background: url(/images/adam-littman-davis-CIian0EjHAU-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 20%;
     height: 100vh;
-    margin-bottom: 0;
 }
-
-.my-styles {
-
-    color: #222;
-    font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-    color: #ddd;
-    font-weight: 900;
-}
-
-.skills-section {
-    margin: 2rem auto; 
-}
-
-.skills-list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.skills {
-    list-style-type: none;
-    margin: 0 1rem;
-}
-
-.fa-brands {
-    font-size: 2rem;
-    color: blue;
-
-}
-
-.card-text {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-.card-body {
-    flex-grow: 1;
-}
-
-.nav {
-    width: 100%;
-    position: fixed;
-    background-color: #222222;
-    color: #ddd;
-    border: none;
-    opacity: 0.4;
-    z-index: 100;
-}
-
-.nav:hover {
-    transition: all 0.7s;
-    opacity: 1;
-}
-
-.shadow {
-    box-shadow: 10px 10px 10px 0px  #777 !important;
-}
-
-.card-row {
-    padding-top: 2rem;
-}
-
-
 
 .display-4 {
-    font-size: 8rem;
+    font-size: 3rem;
     font-family: 'Indie Flower', cursive;
-    color: #222;
+    color: var(--darkGrey);
 }
 
 .intro {
     position: relative;
     top: 6rem;
-    right: 15rem;
     margin-top: 0;
-
 }
 
 .lead {
     position: relative;
-    left: 4rem;
+    left: 1rem;
 }
 
-.nav-tabs .nav-items:hover {
-    background-color: #777;
-    
-}
-
-.nav-tabs:active {
-    border: none;
-}
-
-.nav-items a {
-    color: #777;
-}
-
-.nav-items a:hover {
-    transition: all 0.7s;
-    color: #222;
-}
-
-#about-me {
-    display: flex;
-    flex-grow: 0 !important;
-}
-
-
-.project-background {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.card {
-    border: none;
-    padding: 0;
-    text-align: center;
-    
-}
-
-.card:hover {
-    transition: all 0.5s ease-in;
-    opacity: 1;
-}
-
-.card-title {
-    text-align: center;
-    padding-top: 1rem;
-
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.breaker {
-    width: 100%;
-    height: 3rem;
-}
-
-
-.btn-primary {
-    background-color: #777;
-    border:none;    
-}
-
-.btn-primary:hover {
-    transition: all 0.2s;
-    background-color: #222;
-    box-shadow: 4px 4px 5px 0 #777;
-}
-
+/* Projects header */
 .project-header {
-    margin-top: 3rem;
+    margin: 3rem 0;
     width:100%;
     display: flex;
     justify-content: center;
@@ -203,8 +84,38 @@ h1 {
 
 #p-header {
     font-family: 'Indie Flower', cursive;
-    font-size: 6rem;
+    font-size: 3rem;
     
+}
+
+/* Cards */
+.card {
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* box-shadow and buttons */
+.shadow {
+    box-shadow: 10px 10px 10px 0  #777 !important;
+}
+
+.btn-primary {
+    background-color: var(--lightGrey);
+    border:none;    
 }
 
 .button-box {
@@ -212,19 +123,124 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
 }
-/* 
-    <section class="container">
-        <div class="row">
-            <div class="card p-6 col-lg-3 col-md-4 col-sm-12" id="about-me" style="width: 18rem;">
-                <h5 class="card-title">About Me</h5>
-                    <img src="./images/portfolio.jpg" class="card-img-top" alt="my other portfolio #1">
-                    <div class="card-body">
-                        <p class="card-text">A portfolio created with HTML CSS and Javascript</p>
-                        <a href="#" class="btn btn-primary">Live</a>
-                        <a href="#" class="btn btn-primary">Github</a>
-                    </div>
-            </div>
-        </div>
-    </section>
 
-*/
+/* Skill section */
+.skills {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.skill-logo {
+    font-size: 3rem;
+    margin: 0.5rem;
+    color: var(--lightGrey);
+}
+
+/* contact section */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.fa-twitter {
+    color:#1DA1F2;
+}
+
+.fa-github {
+    color: #6e5494
+}
+
+.fa-at {
+    color:#008080;
+}
+
+/* footer */
+footer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: #ddd;
+    color: var(--lightGrey);
+}
+
+
+@media (min-width: 768px) {
+    
+    .contact-container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .contact-icons {
+        font-size: 5rem;
+        
+    }
+}
+
+@media (min-width: 992px) {
+
+    .nav {
+        opacity: 0.4;
+    }
+    
+    .contact-icons {
+        color: var(--lightGrey);
+    }
+
+    .nav:hover {
+        transition: all 0.7s;
+        opacity: 1;
+    }
+
+    .nav-tabs .nav-items:hover {
+        background-color: var(--lightGrey);
+        
+    }
+
+    .skill-logo {
+        font-size: 3rem;
+        margin: 5rem 2rem;
+    }
+
+    .nav-items a:hover {
+        transition: all 0.7s;
+        color: var(--darkGrey);
+    }
+
+    .fa-twitter:hover {
+        color: #1DA1F2
+    }
+    
+    .fa-github:hover {
+        color: #6e5494;
+    }
+    .fa-solid  {
+        font-size: 6rem;
+        color: var(--lightGrey);
+    }
+    
+    #email:hover {
+        color: #008080;
+    }
+
+    .btn-primary:hover {
+        transition: all 0.2s;
+        background-color: var(--darkGrey);
+        box-shadow: 4px 4px 5px 0 #777;
+    }
+}

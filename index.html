@@ -14,7 +14,6 @@
     <title>David Jones Bootstrap</title>
 </head>
 <body class="my-styles">
-
     <!-- Navigation -->
     <header>
         <ul class="nav nav-tabs">
@@ -22,17 +21,16 @@
                 <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-items">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#project-nav">Projects</a>
             </li>
             <li class="nav-items">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about-nav">About</a>
             </li>
             <li class="nav-items">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact-nav">Contact</a>
             </li>
         </ul>
     </header>
-
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container intro">
@@ -40,97 +38,90 @@
             <p class="lead">Welcome to my bootstrap portfolio</p>
         </div>
     </div>
-
-    <div class="project-header">
+    <!-- Project Section-->
+    <div class="project-header" id="project-nav">
         <h2 id="p-header">Projects</h2>
     </div>
     <!-- Project Grid -->
-    <div class="project-background">
-    <section class="container">
+    <section class="container" >
         <div class="row card-row">
-            
             <div class="card m-1 mb-3 mx-auto shadow col-lg-5 col-md-5 col-sm-12" id="project-card-1" style="width: 18rem;">
                 <h5 class="card-title">Portfolio #1</h5>
-                    <img src="./images/portfolio.jpg" class="card-img-top" alt="my other portfolio #1">
-                    <div class="card-body">
-                        <p class="card-text">A portfolio created with HTML CSS and Javascript</p>
-                        <div class="button-box">
-                        <a href="#" class="btn btn-primary">Live</a>
-                        <a href="#" class="btn btn-primary">Github</a>
+                <img src="./images/portfolio.jpg" class="card-img-top" title="portfolio #1" alt="my other portfolio #1">
+                <div class="card-body">
+                    <p class="card-text">A portfolio created with HTML CSS and Javascript</p>
+                    <div class="button-box">
+                        <a href="https://davejonesuk.dev/" target="_blank" class="btn btn-primary">Live</a>
+                        <a href="https://github.com/imBoonie/My-Portfolio" target="_blank" class="btn btn-primary">Github</a>
                     </div>
-                    </div>
-                    
+                </div>   
             </div>
             <div class="card m-1 mb-3 mx-auto shadow col-lg-5 col-md-5 col-sm-12" id="project-card-2" style="width: 18rem;">
                 <h5 class="card-title">Flag Quiz</h5>
-                <img src="/images/flag-quiz.jpg" class="card-img-top" alt="A simple quiz game">
+                <img src="/images/flag-quiz.jpg" class="card-img-top" title="quiz game" alt="A simple quiz game">
                 <div class="card-body">
-                    
                     <p class="card-text">A scored, multiple choice flag guessing game</p>
                     <div class="button-box">
-                    <a href="#" class="btn btn-primary">Live</a>
-                    <a href="#" class="btn btn-primary">Github</a>
-                </div>
+                        <a href="https://davejonesuk.dev/projects/flag/index.html" target="_blank" class="btn btn-primary">Live</a>
+                        <a href="https://github.com/imBoonie/Flag-Quiz-Game" target="_blank" class="btn btn-primary">Github</a>
+                    </div>
                 </div>
             </div>
             <div class="card m-1 mb-3 mx-auto shadow col-lg-5 col-md-5 col-sm-12" id="project-card-3" style="width: 18rem;">
                 <h5 class="card-title">House Scorer</h5>
-                <img src="/images/house-scorer.jpg" class="card-img-top" alt="house scorer">
+                <img src="/images/house-scorer.jpg" class="card-img-top" title="house scorer" alt="house scorer">
                 <div class="card-body">
                     <p class="card-text">A bootstrap site that scores houses based on your preferences</p>
                     <div class="button-box">
-                    <a href="#" class="btn btn-primary">Live</a>
-                    <a href="#" class="btn btn-primary">Github</a>
-                </div>
+                        <a href="https://davejonesuk.dev/projects/house/index.html" target="_blank" class="btn btn-primary">Live</a>
+                        <a href="https://github.com/imBoonie/House" target="_blank" class="btn btn-primary">Github</a>
+                    </div>
                 </div>
             </div>
             <div class="card m-1 mb-3 mx-auto shadow col-lg-5 col-md-5 col-sm-12" id="project-card-4" style="width: 18rem;">
                 <h5 class="card-title">Portfolio #2</h5>
-                <img src="/images/portfolio2.jpg" class="card-img-top" alt="house scorer">
+                <img src="/images/portfolio2.jpg" class="card-img-top" title="portfolio #2" alt="portfolio #2">
                 <div class="card-body">
                     <p class="card-text">A different portfolio using HTML and CSS</p>
                     <div class="button-box">
-                    <a href="#" class="btn btn-primary">Live</a>
-                    <a href="#" class="btn btn-primary">Github</a>
-                </div>
+                        <a href="https://dj-86.github.io/my-portfolio/" target="_blank" class="btn btn-primary">Live</a>
+                        <a href="https://github.com/DJ-86/my-portfolio" target="_blank" class="btn btn-primary">Github</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-</div>
 
     <!-- This grid contains about me, skills, and contact me sections-->
     <section class="container">
+        <div class="skills">
+            <i class="skill-logo fa-brands fa-html5" alt="html" title="html"></i>
+            <i class="skill-logo fa-brands fa-css3-alt" alt="css" title="css"></i>
+            <i class="skill-logo fa-brands fa-bootstrap" alt="bootstrap" title="bootstrap"></i>
+            <i class="skill-logo fa-brands fa-js" alt="javascript" title="javascript"></i>
+            <i class="skill-logo fa-brands fa-react" alt="react" title="react"></i>
+        </div>
         <div class="row">
-            <div class="card col-lg-6 col-md-4 col-sm-12" id="about-me" style="width: 18rem;">
-                <h5 class="card-title">About Me</h5>
-                    <img src="./images/portfolio.jpg" class="card-img-top" alt="my other portfolio #1">
-                    <div class="card-body">
-                        <p class="card-text">I'm a guy in my mid 30's that decided to change my career during lockdown. I quit my job working in a freezer and began researching careers that I could self-teach. I enjoy problem solving and as a gamer, already spend loads of time on my PC so the path of becoming a developer was appealing.</p>
-                        <a href="#" class="btn btn-primary">Live</a>
-                        <a href="#" class="btn btn-primary">Github</a>
-                    </div>
+            <div class="card m-1 mb-3 mx-auto shadow col-lg-5 col-md-5 col-sm-12" style="width: 18rem;">
+                <h5 class="card-title" id="about-nav">About Me</h5>
+                <img src="./images/bio-pic.png" class="card-img-top" title="a picture of me" alt="a picture of me">
+                <div class="card-body">
+                    <p class="card-text">I'm a guy in my mid 30's that decided to change my career during lockdown. I quit my job working in a freezer and began researching careers that I could self-teach. I enjoy problem solving and as a gamer, already spend loads of time on my PC so the path of becoming a developer was appealing.</p>
+                </div>
             </div>
-            <div class="card col-lg-6 col-md-4 col-sm-12" id="about-me" style="width: 18rem;">
-                <h5 class="card-title">Skills</h5>
-                    <div class="card-body">
-                        <ul class="skills-list">
-                            <li class="skills"><i class="fa-brands fa-html5"></i>HTML</li>
-                            <li class="skills"><i class="fa-brands fa-css3-alt"></i>CSS</li>
-                            <li class="skills"><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
-                            <li class="skills"><i class="fa-brands fa-js"></i>Javascript</li>
-                            <li class="skills"><i class="fa-brands fa-react"></i>React</li>
-                        </ul>
-                    </div>
+            <div class="card m-1 mb-3 mx-auto shadow col-lg-5 col-md-5 col-sm-12" style="width: 18rem;">
+                <h5 class="card-title" id="contact-nav">Contact me</h5>
+                <div class="contact-container">
+                    <a href="https://mobile.twitter.com/DMJ_86" target="_blank"><i class="contact-icons fa-brands fa-twitter" id="twitter" title="twitter logo" alt="twitter logo"></i></a>
+                    <a href="https://github.com/DJ-86" target="_blank"><i class="contact-icons fa-brands fa-github" id="github" title="github logo" alt="github logo"></i></a>
+                    <a href="mailto:davidmarkjones86@gmail.com" target="_blank"><i class="contact-icons fa-solid fa-at" id="email" title="email logo" alt="email logo"></i></a>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore, expedita quasi exercitationem ad ullam tenetur cumque quo deserunt, consectetur adipisci fugit porro commodi, recusandae quia dolor quis sunt enim.</p>
+        <p>Copyright &copy 2022 David Jones</p>
     </footer>
-</div>
-    
 </body>
 </html>
