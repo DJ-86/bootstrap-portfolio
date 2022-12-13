@@ -208,8 +208,7 @@ footer {
     }
 
     .nav-tabs .nav-items:hover {
-        background-color: var(--lightGrey);
-        
+        background-color: var(--lightGrey);   
     }
 
     .skill-logo {
