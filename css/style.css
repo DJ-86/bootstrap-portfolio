@@ -4,11 +4,11 @@ Tasks
 
 Style
 
-Fonts
-Nav
+Fonts *
+Nav *
 Jumbo
 Cards
-Background
+Background *
 Skills
 Footer
 apply a box shadow to cards on hover
@@ -23,6 +23,9 @@ Links
  * {
     box-sizing: border-box;
 }
+.row {
+    margin: 1rem;
+}
 
 .jumbotron {
     background: url(/images/adam-littman-davis-CIian0EjHAU-unsplash.jpg);
@@ -34,7 +37,7 @@ Links
 }
 
 .my-styles {
-    background-color: #777;
+
     color: #222;
     font-family: 'Roboto', sans-serif;
 }
@@ -90,16 +93,15 @@ h1 {
     opacity: 1;
 }
 
-
+.shadow {
+    box-shadow: 10px 10px 10px 0px  #777 !important;
+}
 
 .card-row {
     padding-top: 2rem;
 }
 
-.card {
-    border: 10px solid #777;
-    border-radius: 0%;
-}
+
 
 .display-4 {
     font-size: 8rem;
@@ -141,6 +143,74 @@ h1 {
 #about-me {
     display: flex;
     flex-grow: 0 !important;
+}
+
+
+.project-background {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    border: none;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.card:hover {
+    transition: all 0.5s ease-in;
+    opacity: 1;
+}
+
+.card-title {
+    text-align: center;
+    padding-top: 1rem;
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.breaker {
+    width: 100%;
+    height: 3rem;
+}
+
+
+.btn-primary {
+    background-color: #777;
+    border:none;    
+}
+
+.btn-primary:hover {
+    transition: all 0.2s;
+    background-color: #222;
+    box-shadow: 4px 4px 5px 0 #777;
+}
+
+.project-header {
+    margin-top: 3rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#p-header {
+    font-family: 'Indie Flower', cursive;
+    font-size: 6rem;
+    
+}
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 /* 
     <section class="container">
