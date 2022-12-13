@@ -1,27 +1,160 @@
-* {
+
+/* 
+Tasks
+
+Style
+
+Fonts
+Nav
+Jumbo
+Cards
+Background
+Skills
+Footer
+apply a box shadow to cards on hover
+
+Design
+
+Skills section
+Card inner
+Links
+
+*/
+ * {
     box-sizing: border-box;
 }
+
 .jumbotron {
-    background: url(/images/friends-banner.jpg);
+    background: url(/images/adam-littman-davis-CIian0EjHAU-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 20%;
-    height: 600px;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.my-styles {
+    background-color: #777;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #ddd;
+    font-weight: 900;
 }
 
 .skills-section {
-    width: 80%;
     margin: 2rem auto; 
 }
 
+.skills-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-.skill-icons {
-    height: 20px;
+.skills {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    color: blue;
+
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card-body {
+    flex-grow: 1;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    background-color: #222222;
+    color: #ddd;
+    border: none;
+    opacity: 0.4;
+    z-index: 100;
+}
+
+.nav:hover {
+    transition: all 0.7s;
+    opacity: 1;
+}
+
+
+
+.card-row {
+    padding-top: 2rem;
 }
 
 .card {
-    width:95%;
-    border: none;
-    box-shadow: 8px 8px 12px 1px rgba(77, 76, 76, 0.5);
-    margin: 1rem;
+    border: 10px solid #777;
+    border-radius: 0%;
 }
+
+.display-4 {
+    font-size: 8rem;
+    font-family: 'Indie Flower', cursive;
+    color: #222;
+}
+
+.intro {
+    position: relative;
+    top: 6rem;
+    right: 15rem;
+    margin-top: 0;
+
+}
+
+.lead {
+    position: relative;
+    left: 4rem;
+}
+
+.nav-tabs .nav-items:hover {
+    background-color: #777;
+    
+}
+
+.nav-tabs:active {
+    border: none;
+}
+
+.nav-items a {
+    color: #777;
+}
+
+.nav-items a:hover {
+    transition: all 0.7s;
+    color: #222;
+}
+
+#about-me {
+    display: flex;
+    flex-grow: 0 !important;
+}
+/* 
+    <section class="container">
+        <div class="row">
+            <div class="card p-6 col-lg-3 col-md-4 col-sm-12" id="about-me" style="width: 18rem;">
+                <h5 class="card-title">About Me</h5>
+                    <img src="./images/portfolio.jpg" class="card-img-top" alt="my other portfolio #1">
+                    <div class="card-body">
+                        <p class="card-text">A portfolio created with HTML CSS and Javascript</p>
+                        <a href="#" class="btn btn-primary">Live</a>
+                        <a href="#" class="btn btn-primary">Github</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+*/

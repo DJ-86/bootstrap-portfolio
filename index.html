@@ -4,49 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/7923de40b5.js" crossorigin="anonymous"></script>
     <title>David Jones Bootstrap</title>
 </head>
-<body>
+<body class="my-styles">
+
+    <!-- Navigation -->
     <header>
         <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
+            <li class="nav-items">
+                <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+            <li class="nav-items">
+                <a class="nav-link" href="#">Projects</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+            <li class="nav-items">
+                <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+            <li class="nav-items">
+                <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
     </header>
-    
+
+    <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container intro">
             <h1 class="display-4">David Jones</h1>
-            <p class="lead">Welcome to my portfolio</p>
+            <p class="lead">Welcome to my bootstrap portfolio</p>
         </div>
     </div>
-
+    <!-- Project Grid -->
     <section class="container">
-        <div class="row">
-            <div class="card col-lg-3 col-md-4 col-sm-12" style="width: 18rem;">
+        <div class="row card-row">
+            <div class="card p-6 col-lg-3 col-md-4 col-sm-12" id="project-card-1" style="width: 18rem;">
                 <h5 class="card-title">Portfolio #1</h5>
-                <img src="./images/portfolio.jpg" class="card-img-top" alt="my other portfolio #1">
-                <div class="card-body">
-                    
-                    <p class="card-text">A portfolio created with HTML CSS and Javascript</p>
-                    <a href="#" class="btn btn-primary">Live</a>
-                    <a href="#" class="btn btn-primary">Github</a>
-                </div>
+                    <img src="./images/portfolio.jpg" class="card-img-top" alt="my other portfolio #1">
+                    <div class="card-body">
+                        <p class="card-text">A portfolio created with HTML CSS and Javascript</p>
+                        <a href="#" class="btn btn-primary">Live</a>
+                        <a href="#" class="btn btn-primary">Github</a>
+                    </div>
             </div>
-            <div class="card col-lg-4 col-md-4 col-sm-12" style="width: 18rem;">
+            <div class="card col-lg-3 col-md-4 col-sm-12" id="project-card-2" style="width: 18rem;">
                 <h5 class="card-title">Flag Quiz</h5>
                 <img src="/images/flag-quiz.jpg" class="card-img-top" alt="A simple quiz game">
                 <div class="card-body">
@@ -56,40 +62,62 @@
                     <a href="#" class="btn btn-primary">Github</a>
                 </div>
             </div>
-            <div class="card col-lg-3 col-md-4 col-sm-12" style="width: 18rem;">
+            <div class="card col-lg-3 col-md-4 col-sm-12" id="project-card-3" style="width: 18rem;">
                 <h5 class="card-title">House Scorer</h5>
                 <img src="/images/house-scorer.jpg" class="card-img-top" alt="house scorer">
                 <div class="card-body">
-                    
                     <p class="card-text">A bootstrap site that scores houses based on your preferences</p>
+                    <a href="#" class="btn btn-primary">Live</a>
+                    <a href="#" class="btn btn-primary">Github</a>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-4 col-sm-12" id="project-card-4" style="width: 18rem;">
+                <h5 class="card-title">Portfolio #2</h5>
+                <img src="/images/portfolio2.jpg" class="card-img-top" alt="house scorer">
+                <div class="card-body">
+                    <p class="card-text">A different portfolio using HTML and CSS</p>
                     <a href="#" class="btn btn-primary">Live</a>
                     <a href="#" class="btn btn-primary">Github</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container col-lg-4 col-md-4 col-sm-12 skills-section">
-        <ul class="card skills-list">
-            <li class="skills"><i class="lab la-html5"></i>HTML</li>
-            <li class="skills"><img class="skill-icons" src="images/html.svg"> CSS</li>
-            <li class="skills"><img class="skill-icons" src="images/html.svg"> Bootstrap</li>
-            <li class="skills"><img class="skill-icons" src="images/html.svg"> Javascript</li>
-            <li class="skills"><img class="skill-icons" src="images/html.svg"> React</li>
-        </ul>
-    </section>
+
+    <!-- This grid contains about me, skills, and contact me sections-->
     <section class="container">
         <div class="row">
-            <section class="about-me">
-                <p>I'm a guy in my mid 30's that decided to change my career during lockdown. I quit my job working in a freezer and began researching careers that I could self-teach. I enjoy problem solving and as a gamer, already spend loads of time on my PC so the path of becoming a developer was appealing.</p>
-            </section>
-            <section class="contact">
+            <div class="card col-lg-6 col-md-4 col-sm-12" id="about-me" style="width: 18rem;">
+                <h5 class="card-title">About Me</h5>
+                    <img src="./images/portfolio.jpg" class="card-img-top" alt="my other portfolio #1">
+                    <div class="card-body">
+                        <p class="card-text">I'm a guy in my mid 30's that decided to change my career during lockdown. I quit my job working in a freezer and began researching careers that I could self-teach. I enjoy problem solving and as a gamer, already spend loads of time on my PC so the path of becoming a developer was appealing.</p>
+                        <a href="#" class="btn btn-primary">Live</a>
+                        <a href="#" class="btn btn-primary">Github</a>
+                    </div>
+            </div>
+                <div class="card col-lg-6 col-md-4 col-sm-12" id="about-me" style="width: 18rem;">
+                    <h5 class="card-title">Skills</h5>
+                        <div class="card-body">
+                            <ul class="skills-list">
+                                <li class="skills"><i class="fa-brands fa-html5"></i>HTML</li>
+                                <li class="skills"><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                                <li class="skills"><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
+                                <li class="skills"><i class="fa-brands fa-js"></i>Javascript</li>
+                                <li class="skills"><i class="fa-brands fa-react"></i>React</li>
+                            </ul>
+                </div>
+                
+                
 
-            </section>
+            
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore, expedita quasi exercitationem ad ullam tenetur cumque quo deserunt, consectetur adipisci fugit porro commodi, recusandae quia dolor quis sunt enim.</p>
     </footer>
+</div>
     
 </body>
 </html>
